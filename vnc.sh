@@ -8,4 +8,6 @@ mv ~/.vnc/xstartup ~/.vnc/xstartup.bak
 curl https://raw.githubusercontent.com/dogemanttv/dogemanttv.github.io/main/xstartup --output ~/.vnc/xstartup
 sudo chmod +x ~/.vnc/xstartup
 vncserver
-~/noVNC/utils/novnc_proxy --vnc localhost:5901
+git clone https://github.com/novnc/noVNC
+cd noVNC
+./utils/novnc_proxy --vnc localhost:5901

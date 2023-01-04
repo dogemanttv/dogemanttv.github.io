@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+	<loc>https://nullsoftware.dev/</loc>
+	<lastmod>2023-01-04T09:35:32+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://nullsoftware.dev/Paint/paint.html</loc>
+	<lastmod>2023-01-04T09:35:32+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://nullsoftware.dev/Notepad/notepad.html</loc>
+	<lastmod>2023-01-04T09:35:32+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://nullsoftware.dev/Calculator/calc.html</loc>
+	<lastmod>2023-01-04T09:35:32+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://nullsoftware.dev/Photo/photo.html</loc>
+	<lastmod>2023-01-04T09:35:32+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://nullsoftware.dev/py2exe/py2exe.html</loc>
+	<lastmod>2023-01-04T09:35:32+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://nullsoftware.dev/gun/gun.html</loc>
+	<lastmod>2023-01-04T09:35:32+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://nullsoftware.dev/Gun2/gun.html</loc>
+	<lastmod>2023-01-04T09:35:32+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://nullsoftware.dev/Sniper/sniper.html</loc>
+	<lastmod>2023-01-04T09:35:32+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://nullsoftware.dev/gun/index.html</loc>
+	<lastmod>2023-01-04T09:35:35+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://nullsoftware.dev/Gun2/index.html</loc>
+	<lastmod>2023-01-04T09:35:35+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://nullsoftware.dev/Gun2LocalMultiplayer/index.html</loc>
+	<lastmod>2023-01-04T09:35:35+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://nullsoftware.dev/Gun2Multiplayer/index.html</loc>
+	<lastmod>2023-01-04T09:35:35+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://nullsoftware.dev/Sniper/index.html</loc>
+	<lastmod>2023-01-04T09:35:36+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://nullsoftware.dev/SniperMobile/index.html</loc>
+	<lastmod>2023-01-04T09:35:36+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+</urlset>

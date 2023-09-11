@@ -33,31 +33,23 @@
       <itunes:author>Rody Davis, Norbert Kozsir</itunes:author>
       <title>Rimworld, but a random disaster happens every 5 minutes</title>
       <pubDate>Mon, 13 Apr 2020 13:00:00 GMT</pubDate>
-      <enclosure url="https://ve49.aadika.xyz/download/tLa9whjyuXQ/mp3/128/1694478857/6692fe6226ee12553d90cfa7dcfeeb2c7bacf06a77a9c159f3919b1287746ab1/1?f=SaveTube.io" type="audio/mpeg" length="34216300" />
+      <enclosure url="https://github.com/dogemanttv/dogemanttv.github.io/releases/download/aaaaaaaaaaaa/1.mp3" type="audio/mpeg" length="34216300" />
       <itunes:duration>27:14</itunes:duration>
       <guid isPermaLink="false">cepod01</guid>
       <itunes:explicit>no</itunes:explicit>
       <description>
-Norbert Kozsir - @norbertkozsir
-
-https://twitter.com/norbertkozsir
-
-https://github.com/norbert515
-
-
-Rody Davis - @rodydavis
-
-https://twitter.com/rodydavis
-
-https://github.com/rodydavis
-
-https://youtube.com/rodydavis
-
-https://rodydavis.com
-
-Our podcast player: 
-
-https://rodydavis.github.io/podcast-player/
+        </description>
+    </item>
+    <item>
+      <author>doug doug</author>
+      <itunes:author>Rody Davis, Norbert Kozsir</itunes:author>
+      <title>I made Twitch Chat invest $10,000 in the stock market</title>
+      <pubDate>Mon, 13 Apr 2020 13:00:00 GMT</pubDate>
+      <enclosure url="https://github.com/dogemanttv/dogemanttv.github.io/releases/download/aaaaaaaaaaaa/2.mp3" type="audio/mpeg" length="34216300" />
+      <itunes:duration>34:09</itunes:duration>
+      <guid isPermaLink="false">cepod01</guid>
+      <itunes:explicit>no</itunes:explicit>
+      <description>
         </description>
     </item>
   </channel>

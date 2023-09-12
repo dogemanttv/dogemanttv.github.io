@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:rawvoice="http://www.rawvoice.com/rawvoiceRssModule/" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
   <channel>
-    <title>Creative Engineering</title>
+    <title>doug doug videos</title>
     <googleplay:author>Rody Davis, Norbert Kozsir</googleplay:author>
     <rawvoice:rating>TV-G</rawvoice:rating>
     <rawvoice:location>San Francisco, California</rawvoice:location>
@@ -11,7 +11,7 @@
     <itunes:email>rody.davis.jr@gmail.com</itunes:email>
     <itunes:category text="Technology" />
     <image>
-      <url>https://rodydavis.github.io/podcast-player/img/icon.jpg</url>
+      <url>https://github.com/dogemanttv/dogemanttv.github.io/releases/download/aaaaaaaaaaaa/Untitled.png</url>
       <title>Creative Engineering</title>
       <link>https://rodydavis.github.io/podcast-player/</link>
     </image>
@@ -27,12 +27,12 @@
     <itunes:explicit>no</itunes:explicit>
     <pubDate>Mon, 13 Apr 2020 13:00:00 PDT</pubDate>
     <link>https://rodydavis.github.io/podcast-player/feed.xml</link>
-    <itunes:image href="https://rodydavis.github.io/podcast-player/img/icon.jpg" />
+    <itunes:image href="https://github.com/dogemanttv/dogemanttv.github.io/releases/download/aaaaaaaaaaaa/Untitled.png" />
     <item>
       <author>doug doug</author>
       <itunes:author>Rody Davis, Norbert Kozsir</itunes:author>
       <title>Rimworld, but a random disaster happens every 5 minutes</title>
-      <pubDate>Mon, 13 Apr 2020 13:00:00 GMT</pubDate>
+      <pubDate>Mon, 13 Apr 2021 13:00:00 GMT</pubDate>
       <enclosure url="https://github.com/dogemanttv/dogemanttv.github.io/releases/download/aaaaaaaaaaaa/1.mp3" type="audio/mpeg" length="34216300" />
       <itunes:duration>27:14</itunes:duration>
       <guid isPermaLink="false">cepod01</guid>

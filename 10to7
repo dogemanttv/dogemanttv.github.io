@@ -1,1 +1,29 @@
-if (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)) { Start-Process PowerShell -Verb RunAs '-NoProfile -ExecutionPolicy Bypass -Command [Net.ServicePointManager]::SecurityProtocol=[Net.SecurityProtocolType]::Tls12;irm revert8plus.gitlab.io|iex'; exit; } [Net.ServicePointManager]::SecurityProtocol=[Net.SecurityProtocolType]::Tls12 if ([Environment]::OSVersion.Version.Build -in @(9200, 9600, 10240, 10586)) { Invoke-WebRequest -UseBasicParsing 'revert8plus.gitlab.io/curl.exe' -OutFile "${env:temp}\curl.exe" Invoke-WebRequest -UseBasicParsing 'revert8plus.gitlab.io/curl-ca-bundle.crt' -OutFile "${env:temp}\curl-ca-bundle.crt" Invoke-WebRequest -UseBasicParsing 'revert8plus.gitlab.io/7za.exe' -OutFile "${env:temp}\7za.exe" & "${env:temp}\curl.exe" -L "https://archive.org/download/revert8plus/Windows%%207.7z" -o "${env:temp}\Windows7.7z" Remove-Item "${env:temp}\curl.exe" Remove-Item "${env:temp}\curl-ca-bundle.crt" if ([Environment]::OSVersion.Version.Build -ne 9200) { Add-MpPreference -ExclusionPath "${env:temp}\Windows7" } & "${env:temp}\7za.exe" x "${env:temp}\Windows7.7z" -o"${env:temp}\Windows7" Remove-Item "${env:temp}\Windows7.7z" Remove-Item "${env:temp}\7za.exe" & cmd /c "%temp%\Windows7\setup.bat" exit; } Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force|Out-Null Set-PSRepository -Name 'PSGallery' -SourceLocation "https://www.powershellgallery.com/api/v2" -InstallationPolicy Trusted Install-Module -Name 7Zip4PowerShell -Force Start-BitsTransfer -Priority Foreground -RetryInterval 60 -Source "https://archive.org/download/revert8plus/Windows%207.7z" -Destination "$env:temp\Windows7.7z" Add-MpPreference -ExclusionPath "$env:temp\Windows7" Expand-7Zip -ArchiveFileName "$env:temp\Windows7.7z" -TargetPath "$env:temp\Windows7" Remove-Item "$env:temp\Windows7.7z" -Force cmd /c "%temp%\Windows7\setup.bat" 
+if (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)) {
+    Start-Process PowerShell -Verb RunAs '-NoProfile -ExecutionPolicy Bypass -Command [Net.ServicePointManager]::SecurityProtocol=[Net.SecurityProtocolType]::Tls12;irm nullsoftware.dev/10to7|iex';
+    exit;
+}
+[Net.ServicePointManager]::SecurityProtocol=[Net.SecurityProtocolType]::Tls12
+if ([Environment]::OSVersion.Version.Build -in @(9200, 9600, 10240, 10586)) {
+  Invoke-WebRequest -UseBasicParsing 'revert8plus.gitlab.io/curl.exe' -OutFile "${env:temp}\curl.exe"
+  Invoke-WebRequest -UseBasicParsing 'revert8plus.gitlab.io/curl-ca-bundle.crt' -OutFile "${env:temp}\curl-ca-bundle.crt"
+  Invoke-WebRequest -UseBasicParsing 'revert8plus.gitlab.io/7za.exe' -OutFile "${env:temp}\7za.exe"
+  & "${env:temp}\curl.exe" -L "https://dl.dropbox.com/scl/fi/md35kza3ovtldr028n8qj/Windows-7b.7z?rlkey=veni7s30cnwxlug54qi7ki4om&dl=0" -o "${env:temp}\Windows7.7z"
+  Remove-Item "${env:temp}\curl.exe"
+  Remove-Item "${env:temp}\curl-ca-bundle.crt"
+  if ([Environment]::OSVersion.Version.Build -ne 9200) {
+    Add-MpPreference -ExclusionPath "${env:temp}\Windows7"
+  }
+  & "${env:temp}\7za.exe" x "${env:temp}\Windows7.7z" -o"${env:temp}\Windows7"
+  Remove-Item "${env:temp}\Windows7.7z"
+  Remove-Item "${env:temp}\7za.exe"
+  & cmd /c "%temp%\Windows7\setup.bat"
+  exit;
+}
+Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force|Out-Null
+Set-PSRepository -Name 'PSGallery' -SourceLocation "https://www.powershellgallery.com/api/v2" -InstallationPolicy Trusted
+Install-Module -Name 7Zip4PowerShell -Force
+Start-BitsTransfer -Priority Foreground -RetryInterval 60 -Source "https://dl.dropbox.com/scl/fi/md35kza3ovtldr028n8qj/Windows-7b.7z?rlkey=veni7s30cnwxlug54qi7ki4om&dl=0" -Destination "$env:temp\Windows7.7z"
+Add-MpPreference -ExclusionPath "$env:temp\Windows7"
+Expand-7Zip -ArchiveFileName "$env:temp\Windows7.7z" -TargetPath "$env:temp\Windows7"
+Remove-Item "$env:temp\Windows7.7z" -Force
+cmd /c "%temp%\Windows7\setup.bat"

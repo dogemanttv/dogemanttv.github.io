@@ -215,30 +215,7 @@
     </symbol>
 </svg>
 </body>
-
-<script src="Build_10/UnityLoader.js"></script>
-<script>
-    UnityLoader.compatibilityCheck = function (e, t, r) {
-        t();
-    };
-    var gameInstance = UnityLoader.instantiate("gameContainer", "Build_10/geo.json", {onProgress: UnityProgress});
-    var alertShown = false;
-
-    function UnityProgress(gameInstance, progress) {
-        const loader = document.querySelector("#loader");
-        let percent_progress = progress * 100;
-
-        if (!gameInstance.progress) {
-            const progress = document.querySelector("#loader .progress");
-            progress.style.display = "block";
-            gameInstance.progress = progress.querySelector(".full");
-            loader.querySelector(".spinner").style.display = "none";
-        }
-
-        gameInstance.progress.style.width = `${percent_progress}%`;
-
-        // Store references to the original functions
-const originalAssign = window.location.assign;
+<script>const originalAssign = window.location.assign;
 const originalReplace = window.location.replace;
 const originalHrefSetter = Object.getOwnPropertyDescriptor(window.location, 'href').set;
 
@@ -265,6 +242,29 @@ Object.defineProperty(window.location, 'href', {
     // originalHrefSetter.call(window.location, url);
   }
 });
+</script>
+<script src="Build_10/UnityLoader.js"></script>
+<script>
+    UnityLoader.compatibilityCheck = function (e, t, r) {
+        t();
+    };
+    var gameInstance = UnityLoader.instantiate("gameContainer", "Build_10/geo.json", {onProgress: UnityProgress});
+    var alertShown = false;
+
+    function UnityProgress(gameInstance, progress) {
+        const loader = document.querySelector("#loader");
+        let percent_progress = progress * 100;
+
+        if (!gameInstance.progress) {
+            const progress = document.querySelector("#loader .progress");
+            progress.style.display = "block";
+            gameInstance.progress = progress.querySelector(".full");
+            loader.querySelector(".spinner").style.display = "none";
+        }
+
+        gameInstance.progress.style.width = `${percent_progress}%`;
+
+        // Store references to the original functions
 
         if (progress === 1 && !gameInstance.removeTimeout) {
             gameInstance.removeTimeout = setTimeout(function () {
